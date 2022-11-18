@@ -52,14 +52,14 @@ To start with, data needs to be preprocessed in order to compile, train and eval
 After the data was preprocessed, we used the following parameters to ***compile, train, and evaluate the model***:
 
 * The initial model had a total of 5,961 parameters as a result of 43 inputs with 2 hidden layers and 1 output layer. 
-  * The first hidden layer had 70 neurons and 70 bias terms. 
-  * The second hidden layer had 40 neurons and 40 bias terms.
-  * The output layer had 1 neuron, and 1 bias term. 
+  * The first hidden layer had 70 neurons.  
+  * The second hidden layer had 40 neurons.
+  * The output layer had 1 neuron. 
   * Both the first and second hidden layers were activated using `RELU - Rectified Linear Unit` function. The output layer was activated using the `Sigmoid` function. 
 
 * The target performance for the accuracy rate should be greater than 75%, however, the model that was created only achieved an accuracy rate of 72.56% and loss percentage was 57.40%.
 ![origin](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Optimization.png)
-![orig](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/AlphabetSoupCharity.png)
+![origin](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/AlphabetSoupCharity.png)
 
 ### Attempts to Optimize and Improve the Accuracy Rate
 
@@ -79,9 +79,9 @@ Three additional attempts were made to increase the model's performance by chang
     *  Binned **INCOME_AMT** column
     *  Removed **SPECIAL_CONSIDERATIONS_Y** column from features as it is redundant to **SPECIAL_CONSIDERATIONS_N**
     *  Increased neurons to 100 for the first hidden layer and 50 for the second hidden layer
-    *  Created 8,801 total parameters, an increase of 2,820 from the original of 5,981
-    *  Accuracy decreased 0.11% from 72.33% to 72.24%
-    *  Loss increased by 1.75% from 58.08% to 59.10%
+    *  Created 8,801 total parameters, an increase of 2,840 from the original of 5,961
+    *  Accuracy decreased by 0.11% from 72.56% to 72.30%
+    *  Loss decreased by 0.77% from original 57.40% to 56.96% 
 
 ![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Optimization_2.png)
 ![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/AlphabetSoupCharity_Opt_2.png)
@@ -91,8 +91,8 @@ Three additional attempts were made to increase the model's performance by chang
     *  Binned **INCOME_AMT** and **AFFILIATION** column
     *  Removed **SPECIAL_CONSIDERATIONS_Y** column from features as it is redundant to **SPECIAL_CONSIDERATIONS_N**
     *  Increased neurons to 125 for the first hidden layer and 50 for the second hidden layer
-    *  Created 11,101 total parameters, an increase of 5,120 from the original of 5,981
-    *  Accuracy increased 0.19% from 72.33% to 72.47%
+    *  Created 11,101 total parameters, an increase of 5,140 from the original of 5,961
+    *  Accuracy increased 0.11% from 72.56% to 72.64%
     *  Loss decreased by 1.82% from 58.08% to 57.02%
 
 ![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Optimization_3.png)
@@ -100,9 +100,9 @@ Three additional attempts were made to increase the model's performance by chang
 
 ## Summary
 
-In summary, our model and various optimizations did not help to achieve the desired result of greater than 75%. With the variations of increasing the epochs, removing variables, adding a 3rd hidden layer (done offline in Optimization attempt #4) and/or increasing/decreasing the neurons, the changes were minimal and did not improve above 19 basis points. In reviewing other `Machine Learning` algorithms, the results did not prove to be any better. For example, `Random Forest Classifier` had a predictive accuracy rate of 70.80% which is a 2.11% decrease from the accuracy rate of the `Deep Learning Neural Network` model (72.33%). 
+In summary, the model and various optimizations did not help to achieve the desired result greater than 75%. With the variations of increasing the epochs, removing variables, adding multiple hidden layer (done offline in Optimization attempt #4) and/or increasing/decreasing the neurons, the changes were minimal and negligible. In reviewing other `Machine Learning` algorithms, the results did not prove to be any better. For example, `Random Forest Classifier` had a predictive accuracy rate of 70.80% which is a 2.11% decrease from the accuracy rate of the `Deep Learning Neural Network` model (72.33%). 
 
-Overall, Neural Networks are very intricate and would require experience through trial and error or many iterations to identify the perfect configuration to work with this dataset.
+In conclusion, Neural Networks are very intricate and would require experience through trial and error or many iterations to identify the perfect configuration to work with this dataset.
 
 ## Resources
 * **Software:** Python 3.7.9, Anaconda 4.9.2 and Jupyter Notebooks 6.1.4
