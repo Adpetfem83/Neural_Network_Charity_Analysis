@@ -93,7 +93,7 @@ Three additional attempts were made to increase the model's performance by chang
     *  Increased neurons to 125 for the first hidden layer and 50 for the second hidden layer
     *  Created 11,101 total parameters, an increase of 5,140 from the original of 5,961
     *  Accuracy increased 0.11% from 72.56% to 72.64%
-    *  Loss decreased by 1.82% from 58.08% to 57.02%
+    *  Loss increased by 1.23% from original 57.40 to 58.11%
 
 ![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Optimization_3.png)
 ![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/AlphabetSoupCharity_Opt_3.png)
