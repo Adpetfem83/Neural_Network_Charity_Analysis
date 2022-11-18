@@ -57,7 +57,7 @@ After the data was preprocessed, we used the following parameters to ***compile,
   * The output layer had 1 neuron, and 1 bias term. 
   * Both the first and second hidden layers were activated using `RELU - Rectified Linear Unit` function. The output layer was activated using the `Sigmoid` function. 
 
-* The target performance for the accuracy rate should be greater than 75%, however, the model that was created only achieved an accuracy rate of 72.56%
+* The target performance for the accuracy rate should be greater than 75%, however, the model that was created only achieved an accuracy rate of 72.56% and loss percentage was 57.40%.
 ![origin](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Optimization.png)
 ![orig](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/AlphabetSoupCharity.png)
 
@@ -67,10 +67,10 @@ Three additional attempts were made to increase the model's performance by chang
 
   * **Optimization Attempt #1:**
     * Binned **INCOME_AMT** column
-    * Created 5,821 total parameters, an decrease of 160 from the original of 5,981
-    * Increased neurons to 80 for the first hidden layer and 40 for the second hidden layer
-    * Accuracy improved 0.13% from 72.33% to 72.42%
-    * Loss was reduced by 2.10% from 58.08% to 56.86%
+    * Created 6,641 total parameters, an increase of 680 from the original of 5,961
+    * Increased neurons to 80 for the first hidden layer and maintained 40 for the second hidden layer
+    * Accuracy almost remained the same from 72.56% to 72.50% with a decrease of 0.08%
+    * Loss was reduced by 0.12% from 57.40% to 57.33%
 ![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Optimization_1.png)
 ![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/AlphabetSoupCharity_Opt_1.png)
     
