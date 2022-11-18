@@ -7,7 +7,7 @@ An exercise in Neural Networks and Deep Learning Models using TensorFlow and Pan
 
 The purpose of this analysis was to explore and implement neural networks using `TensorFlow` in `Python`. Neural networks is an advanced form of `Machine Learning` that can recognize patterns and features in the dataset. Neural networks are modeled after the human brain and contain layers of neurons that can perform individual computations.
 
-![neural](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis-2/blob/main/Images/Neural_Network_image.png)
+![neural](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Network_Image.png..png)
 
 Throughout this module, we learned:
 
@@ -58,8 +58,8 @@ After the data was preprocessed, we used the following parameters to ***compile,
   * Both the first and second hidden layers were activated using `RELU - Rectified Linear Unit` function. The output layer was activated using the `Sigmoid` function. 
 
 * The target performance for the accuracy rate should be greater than 75%, however, the model that was created only achieved an accuracy rate of 72.56%
-
-![orig](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis-2/blob/main/Images/AlphabetSoupCharity.png)
+![origin](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Optimization.png)
+![orig](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/AlphabetSoupCharity.png)
 
 ### Attempts to Optimize and Improve the Accuracy Rate
 
@@ -71,8 +71,8 @@ Three additional attempts were made to increase the model's performance by chang
     * Increased neurons to 80 for the first hidden layer and 40 for the second hidden layer
     * Accuracy improved 0.13% from 72.33% to 72.42%
     * Loss was reduced by 2.10% from 58.08% to 56.86%
-
-![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis-2/blob/main/Images/AlphabetSoupCharity.png)
+![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Optimization_1.png)
+![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/AlphabetSoupCharity_Opt_1.png)
     
   * **Optimization Attempt #2:**
     *  Removed **ORGANIZATION** column
@@ -83,8 +83,9 @@ Three additional attempts were made to increase the model's performance by chang
     *  Accuracy decreased 0.11% from 72.33% to 72.24%
     *  Loss increased by 1.75% from 58.08% to 59.10%
 
+![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Optimization_2.png)
+![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/AlphabetSoupCharity_Opt_2.png)
 
-![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis-2/blob/main/Images/AlphabetSoupCharity_Opt_2.png)
     
   * **Optimization Attempt #3:**
     *  Binned **INCOME_AMT** and **AFFILIATION** column
@@ -94,8 +95,8 @@ Three additional attempts were made to increase the model's performance by chang
     *  Accuracy increased 0.19% from 72.33% to 72.47%
     *  Loss decreased by 1.82% from 58.08% to 57.02%
 
-
-![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis-2/blob/main/Images/AlphabetSoupCharity_Opt_3.png)
+![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/Neural_Optimization_3.png)
+![results](https://github.com/Adpetfem83/Neural_Network_Charity_Analysis/blob/main/Images/AlphabetSoupCharity_Opt_3.png)
 
 ## Summary
 
